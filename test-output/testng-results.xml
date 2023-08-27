@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-27T12:19:01 NPT" name="Default suite" finished-at="2023-08-27T12:22:44 NPT" duration-ms="222335">
+  <suite started-at="2023-08-27T18:35:10 NPT" name="Default suite" finished-at="2023-08-27T18:36:01 NPT" duration-ms="50647">
     <groups>
     </groups>
-    <test started-at="2023-08-27T12:19:01 NPT" name="Default test" finished-at="2023-08-27T12:22:44 NPT" duration-ms="222335">
+    <test started-at="2023-08-27T18:35:10 NPT" name="Default test" finished-at="2023-08-27T18:36:01 NPT" duration-ms="50647">
       <class name="Verisk_Assesment.verisk_selenium_assesment.DarazAutomateTest">
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Verisk_Assesment.verisk_selenium_assesment.DarazAutomateTest@3270d194]" started-at="2023-08-27T12:18:54 NPT" name="setUpBrowser" finished-at="2023-08-27T12:19:01 NPT" duration-ms="7155" status="PASS">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:Verisk_Assesment.verisk_selenium_assesment.DarazAutomateTest@3270d194]" started-at="2023-08-27T18:35:04 NPT" name="setUpBrowser" finished-at="2023-08-27T18:35:10 NPT" duration-ms="6086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method signature="darazTestCases()[pri:0, instance:Verisk_Assesment.verisk_selenium_assesment.DarazAutomateTest@3270d194]" started-at="2023-08-27T12:19:02 NPT" name="darazTestCases" finished-at="2023-08-27T12:22:44 NPT" duration-ms="222274" status="PASS">
+        <test-method signature="darazTestCases()[pri:0, instance:Verisk_Assesment.verisk_selenium_assesment.DarazAutomateTest@3270d194]" started-at="2023-08-27T18:35:11 NPT" name="darazTestCases" finished-at="2023-08-27T18:36:01 NPT" duration-ms="50569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- darazTestCases -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Verisk_Assesment.verisk_selenium_assesment.DarazAutomateTest@3270d194]" started-at="2023-08-27T12:22:44 NPT" name="close" finished-at="2023-08-27T12:22:48 NPT" duration-ms="4088" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Verisk_Assesment.verisk_selenium_assesment.DarazAutomateTest@3270d194]" started-at="2023-08-27T18:36:01 NPT" name="close" finished-at="2023-08-27T18:36:02 NPT" duration-ms="1322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

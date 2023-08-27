@@ -4,25 +4,17 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.firefox.FirefoxProfile;
-
-
+import org.openqa.selenium.edge.EdgeDriver;
 import java.io.FileReader;
 import java.util.List;
 
@@ -45,9 +37,9 @@ public class DarazAutomateTest {
             extentReports.attachReporter(htmlReports);
             
 
-            // Set up Firefox driver using WebDriverManager
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
+            // Set up Edge driver using WebDriverManager
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
         } catch (Exception e) {
             System.out.println("Error in DarazAutomateTest>>setUpBrowser: " + e);
         }
@@ -132,23 +124,22 @@ public class DarazAutomateTest {
             System.out.println("Error in DarazAutomateTest>>darazTestCases: "+e);
         }
     }
+    
+
 
     @AfterSuite
-    public void close(){
-        try{
-
-            driver.close();
-            driver.quit();
-            darazTest.info("Closed the Browser");
-            darazTest.info("----------Test Completed -----------");
-
+    public void close() {
+        try {
+        	
+        	driver.quit();
+            darazTest.info("---------- Test Suite Completed -----------");
             extentReports.flush();
-
-        }
-        catch (Exception e){
-            System.out.println("Error in DarazAutomateTest>>close: "+e);
+           
+        } catch (Exception e) {
+            System.out.println("Error in DarazAutomateTest>>close: " + e);
         }
     }
+
 
     public void handlePassCase(String message, String imgName){
         try {
